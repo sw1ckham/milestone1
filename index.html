@@ -8,7 +8,7 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>
@@ -18,17 +18,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+
+
 
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <h1 class="text-light">Southwicks</h1>
+
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="index.html" class="col-md-2 logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse justify-content-left" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item ative">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -50,10 +58,106 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
             </li>
-
-
         </ul>
+        <button type="button" class="btn btn-success">Request a free quote</button>
     </div>
 </nav>
+
+</header>
+
+<img src="assets/images/closeupedit.jpg" class="img-fluid" alt="Responsive image"/>
+
+<div class="container-fluid">
+    <div class="row no-gutters justify-content-center">
+        <div class="col-sm-4 why-us-images">
+               <img class="which-best" src="assets/images/which-logo.png" alt="Which Best Buy Logo">
+               <img class="trading-standards" src="assets/images/tradingstandardsapproved.jpg" alt="Trading Standards Approved">
+               <img class="guarantee" src="assets/images/guarantee-garden-office.gif" alt="10 year guarantee">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid enquire-section">
+    <div class="row no-gutters">
+        <div class="col-6-md enquire-form">
+            <h4 class="uppercase enquire-heading">Enquire for a free survey</h4>
+            <form class="formsection">
+                <div class="form-row">
+                    <div class="col">
+                        <label>
+                            <input type="text" class="form-control" placeholder="First name" required/>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                        <input type="text" class="form-control" placeholder="Last name" required/>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                <div class="col">
+                    <label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required/>
+                        </label>
+                </div>
+                <div class="col">
+                    <label>
+                    <input type="tel" class="form-control" id="example-tel-input" placeholder="Telephone Number" required/>
+                        </label>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="col">
+                    <label>
+                    <input type="text"  class="form-control" id="inputAddress" placeholder="Address" required/>
+                        </label>
+                </div>
+                    <div class="col">
+                        <label>
+                        <input type="text"  class="form-control" id="inputZip" placeholder="Post Code" required/>
+                            </label>
+                    </div>
+                </div>
+            </form>
+            <button type="submit" class="btn btn-success">Submit</button>
+
+    </div>
+</div>
+</div>
+
+
+
+
+<footer class="container-fluid">
+    <div id="footer-details" class="row">
+        <div class="col-12 social">
+          <h5 class="follow-us-heading">Follow us</h5>
+            <ul class="list-inline social-links">
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fab fa-blogger-b" aria-hidden="true"></i>
+                        <span class="sr-only">Blogger</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">All content © 2015 www.southwicks.co.uk.
+                All rights reserved Southwicks Limited.Company No. 06044222. Vat No. 151668795
+                Registered address: 8 Spur Road, Cosham, Portsmouth, Hampshire. PO6 3EB</p>
+        </div>
+    </div>
+</footer>
 </body>
+
 </html>
