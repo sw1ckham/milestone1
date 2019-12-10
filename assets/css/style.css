@@ -7,6 +7,9 @@ header {
 
 .follow-us-heading {
     color: #4caf50;
+    text-align: center;
+    font-size: 30px;
+
 }
 
 .why-us-heading {
@@ -20,6 +23,11 @@ header {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.main-section-heading {
+    text-align: center;
+    color: #4caf50;
 }
 
 
@@ -48,12 +56,14 @@ header {
     position: absolute;
     top:0;
     right:0;
-    background: url("../images/southwickslogo.png");
+    margin: 5px 5px 5px 5px;
+    background: url("../images/clean-southwicks-logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100px;
-    height: 100px;
+    height: 142px;
+    width: 176px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -63,16 +73,18 @@ header {
 .nav-link {
     font-weight: 700;
     letter-spacing: 1px;
-    padding-left: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
 
 }
 
 .navbar {
     min-height: 100px;
-    height: 100px;
+    height: 142px;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 /*----- Banner image ------- */
@@ -81,6 +93,7 @@ header {
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
+    margin-top: 142px;
     /* margin-left: 15%;
     margin-right: 15%; */
 }
@@ -92,39 +105,57 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.block-divider {
+    width: 70%;
+    height: 1px;
+    background-color: #4caf50;
+}
+
+.button-holder {
+    text-align: center;
+}
+
+.review-section {
+
+}
+
 /*--------- Why-us-section ----- */
 
+.why-us-text {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
 .why-us-images {
        display: block;
+       text-align: center;
+       cursor: pointer;
 }
 
 .which-best {
-    width: 100px;
+
     height: 100px;
     margin: 25px 25px 25px 25px;
-    transition-property: scale;
     transition-timing-function: ease-in-out;
-    transition-duration: 2s;
-    display: inline-list-item;
+    transition-duration: 0.4s;
+
 }
 
 .trading-standards {
-    width: 100px;
+
     height: 100px;
     margin: 25px 25px 25px 25px;
-    transition-property: scale;
     transition-timing-function: ease-in-out;
-    transition-duration: 2s;
-    display: inline
+    transition-duration: 0.4s;
+
 }
 
 .guarantee {
-    width: 100px;
+
     height: 100px;
     margin: 25px 25px 25px 25px;
-    transition-property: scale;
     transition-timing-function: ease-in-out;
-    transition-duration: 2s;
+    transition-duration: 0.4s;
 
 }
 
@@ -139,8 +170,6 @@ header {
     margin: 25px 25px 25px 25px;
 }
 .formsection {
-    border: #4caf50 solid 1px;
-    border-radius: 7px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -148,10 +177,11 @@ header {
 .form-control {
     padding-top: 5px;
     padding-bottom: 5px;
+    border: 1px solid #4caf50;
 }
 
-.btn {
-
+.message-text {
+    color: rgba(0, 0, 0, 0.52);
 }
 
 /*------ Footer ------*/
@@ -169,6 +199,8 @@ footer {
     color: #007bff;
     position: relative;
     display: inline-block;
+    font-size: 50px;
+    text-align: center;
 }
 
 .copyright {
