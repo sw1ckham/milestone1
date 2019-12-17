@@ -24,8 +24,6 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
 
-
-
     <script type="text/javascript" src="https://statcounter.com/counter/counter.js"></script>
 
 
@@ -47,11 +45,11 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
 
-/*------ got my dropdown code from W3 Schools ------- */
+
 
                 <div class="dropdown">
                     <li class="nav-item">
-                        <button class="dropbtn"><a class="nav-link" href="about.html">About</a></button>
+                        <button class="dropbtn"><a class="nav-link" href="about.html">About<i class="fal fa-caret-down"></i></a></button>
                     </li>
                     <div class="dropdown-content">
                         <a class="nav-link" href="Meet the Team">Meet the team</a>
@@ -60,9 +58,16 @@
                     </div>
                 </div>
 
+                <div class="dropdown">
                 <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
+                    <button class="dropbtn"><a class="nav-link" href="gallery.html">Gallery<i class="fal fa-caret-down"></i></a></button>
                 </li>
+                    <div class="dropdown-content">
+                        <a class="nav-link" href="Interior">Interior</a>
+                        <a class="nav-link" href="Interior">Exterior</a>
+                        <a class="nav-link" href="Interior">Outer shells</a>
+                    </div>
+                </div>
 
                 <li class="nav-item">
                     <a class="nav-link" href="buildspecs.html">Build Specs</a>
@@ -74,7 +79,7 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <button type="button" class="btn btn-success">Request a free survey</button>
+            <a href="contact.html"><button type="button" class="btn btn-success request-btn">Request a free survey</button></a>
         </div>
     </nav>
 
