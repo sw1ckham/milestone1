@@ -39,6 +39,18 @@ header {
     color: #4caf50;
 }
 
+.main-section {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+/*----@media (max-width: 768px) {
+    .main-section {
+        padding-top: 2px;
+    }
+}----*/
+
 
 /*------ Nav Bar ------*/
 
@@ -146,10 +158,17 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media  (max-height:768px) {
+@media (max-height: 768px) {
     .enquire-section {
         height: auto;
     }
+}
+
+@media (max-width: 768px) {
+    .enquire-form {
+     padding-left: 50px;
+     padding-right: 50px;
+ }
 }
 
 .block-divider {
@@ -169,8 +188,15 @@ header {
 /*--------- Why-us-section ----- */
 
 .why-us-text {
-    padding: 25px 50px 50px 50px;
+    padding-top: 25px;
+    margin-bottom: 0;
 
+}
+
+@media (min-width: 992px) {
+    .why-us-text {
+        margin-bottom: 25px;
+    }
 }
 .why-us-images {
        display: block;
@@ -191,7 +217,7 @@ header {
 
 .trading-standards {
 
-    height: 100px;
+    height: 145px;
     margin: 25px 25px 25px 25px;
     transition-timing-function: ease-in-out;
     transition-duration: 0.4s;
@@ -233,6 +259,10 @@ header {
     width: 100%;
 }
 
+label {
+    width: 100%;
+}
+
 .form-row {
     margin-right: 0;
     margin-left: 0;
@@ -259,6 +289,12 @@ header {
 
 }
 
+@media (max-width: 768px) {
+    .carousel-slide {
+        font-size: 14px;
+    }
+}
+
 .carousel-item {
     float: 0;
     margin: 0;
@@ -282,7 +318,10 @@ footer {
 .social {
     text-align: center;
     margin-top: 30px;
+    width: 100%;
+    padding-left: none;
 }
+
 .list-inline {
     color: #007bff;
     position: relative;
@@ -297,7 +336,6 @@ footer {
     text-align: center;
     padding-top: 10px;
     margin-right: 0;
-    margin-right: 0;
     width: 100%;
 }
 
@@ -305,5 +343,12 @@ footer {
     float: right;
     max-width: 250px;
     padding-top: 20px;
+    border-radius: .25rem;
+}
+
+@media (max-width: 576px) {
+    .footer-image {
+        display: none;
+    }
 }
 
