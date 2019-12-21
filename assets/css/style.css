@@ -281,16 +281,16 @@ label {
 
 /*------- review carousel -----*/
 
-.carousel-slide {
+.carousel-style {
     text-align: center;
     padding: 25px 25px 25px 25px;
     margin-top: 25px;
-    overflow: auto;
+
 
 }
 
 @media (max-width: 768px) {
-    .carousel-slide {
+    .carousel-style {
         font-size: 14px;
     }
 }
