@@ -113,7 +113,6 @@ header {
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
 
 .dropdown-content {
@@ -122,6 +121,8 @@ header {
     background-color: #f8f9fa;
     min-width: 160px;
     z-index: 1;
+
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -296,14 +297,20 @@ label {
 }
 
 .carousel-item {
-    float: 0;
-    margin: 0;
+    float: none;
+    margin: none;
 }
 
 .carousel-image {
     height: 100px;
     width: 200px;
     border-radius: .25rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-bottom: 180px;
+    filter: invert(100%);
 }
 
 /*------ Footer ------*/
@@ -347,7 +354,17 @@ footer {
     width: 100%;
 }
 
+.footer-text {
+    color: #4caf50;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+}
 
+.footer-text span {
+    position: absolute;
+    bottom: 0;
+}
 
 .footer-image {
     float: right;
@@ -356,7 +373,9 @@ footer {
     border-radius: .25rem;
 }
 
-@media (max-width: 576px) {
+
+
+@media (max-width: 768px) {
     .footer-image {
         display: none;
     }
