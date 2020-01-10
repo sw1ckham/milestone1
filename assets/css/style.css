@@ -75,7 +75,16 @@ html {
     text-align: center;
     color: #4caf50;
     font-weight: 500;
-    padding-top: 20px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.build-specs-heading {
+    text-align: center;
+    color: #4caf50;
+    font-weight: 500;
+    padding-top: 10px;
     letter-spacing: 1px;
     line-height: 1.4;
 }
@@ -387,14 +396,11 @@ html {
     letter-spacing: 2px;
     text-align: center;
     padding-top: 25px;
-
 }
 
 .test-images {
     border-radius: 5px;
     margin-top: 25px;
-
-
 }
 
 .review-name-text {
@@ -519,8 +525,12 @@ footer {
     font-size: small;
     text-align: center;
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
 }
+
+/*----- To be added after submission
 
 .footer-text {
     color: #4caf50;
@@ -555,7 +565,17 @@ footer {
     }
 }
 
+
+--------*/
+
 /*------ Meet the team ------*/
+
+@media (max-width: 768px) {
+    .who-are-we {
+        padding-top: 10px;
+    }
+}
+
 
 .meet-the-team-text {
     letter-spacing: 1px;
@@ -564,4 +584,20 @@ footer {
     padding-top: 20px;
     color: #716666;
     font-weight: 500;
+}
+
+/*------- Building specs --------*/
+
+.build-specs-text {
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-top: 20px;
+    color: #716666;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .build-specs-heading {
+        display:none;
+    }
 }
