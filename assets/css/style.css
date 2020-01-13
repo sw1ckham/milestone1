@@ -75,6 +75,20 @@ html {
 
 }
 
+.who-are-we-heading {
+    color: #4caf50;
+    font-weight: 400;
+    border: #716666 solid 3px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 8px;
+    -webkit-box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
+    -moz-box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
+    box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
+    display: inline-block;
+}
+
 
 .main-section-heading {
     text-align: center;
@@ -289,7 +303,8 @@ html {
 .interior-gallery-section {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 4px;
+    padding-bottom: 10px;
 }
 
 
@@ -593,6 +608,10 @@ footer {
 --------*/
 
 /*------ Meet the team ------*/
+
+.who-are-we {
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .who-are-we {
