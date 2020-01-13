@@ -183,6 +183,10 @@ html {
     border: none;
 }
 
+.dropdown-menu {
+    background-color: rgba(248,249,250,1)
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -207,7 +211,7 @@ html {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .navbar-collapse {
         background-color: rgba(248,249,250,1) ;
     }
