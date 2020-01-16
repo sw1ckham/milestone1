@@ -102,34 +102,34 @@ html {
 .homepage-main-heading {
     text-align: center;
     color: #4caf50;
-    font-weight: 500;
-    padding-top: 10px;
+    font-weight: 400;
+    padding-top: 0px;
     letter-spacing: 1px;
     line-height: 1.4;
+    font-size: 30px;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
     .homepage-main-heading {
-        font-weight: 400;
-        padding-top: 0px;
-        font-size: 30px;
+        font-weight: 500;
+        padding-top: 10px;
     }
 }
 
 .homepage-tagline-heading {
     text-align: center;
     color: #4caf50;
-    font-weight: 500;
-    padding-top: 10px;
+    font-weight: 400;
+    padding-top: 0px;
     letter-spacing: 1px;
     line-height: 1.4;
+    font-size: 20px;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
     .homepage-tagline-heading {
-        font-weight: 400;
-        padding-top: 0px;
-        font-size: 20px;
+        font-weight: 500;
+        padding-top: 10px;
     }
 }
 
@@ -142,15 +142,9 @@ html {
     line-height: 1.4;
 }
 
-
-/*----@media (max-width: 768px) {
-    .main-section {
-        padding-top: 2px;
-    }
-}----*/
-
-
 /*------ Nav Bar ------*/
+
+/*--- Nav bar styling came from Mentor ---*/
 
 .fa-1x {
     font-size: 1.5rem;
@@ -170,6 +164,8 @@ html {
 .dark-teal-text {
     color: #004d40;
 }
+
+/* End of styling that came from Mentor */
 
 .logo {
     position: absolute;
@@ -250,13 +246,7 @@ html {
 .navbar-collapse {
     border-radius: 5px;
     padding-bottom: 5px;
-}
-
-
-@media (max-width: 991px) {
-    .navbar-collapse {
-        background-color: rgba(248,249,250,1) ;
-    }
+    background-color: rgba(248,249,250,1)
 }
 
 /*----- Banner image ------- */
@@ -278,6 +268,7 @@ html {
     background-repeat: no-repeat;
     text-align: center;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .meet-the-team-img-bottom {
@@ -293,18 +284,18 @@ html {
     width: 100%;
     background-repeat: no-repeat;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .meet-the-team-img-main {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 }
 
-
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .meet-the-team-img {
-        margin-top: 10px;
+       margin-top: 0px;
     }
 }
 /*------ Sections ------ */
@@ -324,19 +315,17 @@ html {
     padding-bottom: 20px;
 }
 
-@media (max-height: 768px) {
-    .enquire-section {
-        height: auto;
-    }
+.enquire-form {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .enquire-form {
-     padding-left: 50px;
-     padding-right: 50px;
+     padding-left: 0px;
+     padding-right: 0px;
  }
 }
-
 
 .button-holder {
     text-align: center;
@@ -366,8 +355,6 @@ html {
 .interior-gallery img:hover {
     transform: scale(1.1);
 }
-
-
 
 /*------ Exterior Gallery Page ------ */
 
@@ -481,11 +468,12 @@ html {
 .test-images {
     border-radius: 5px;
     margin-top: 25px;
+    max-width: 250px;
 }
 
-@media (max-width: 350px) {
+@media (min-width: 350px) {
     .test-images {
-        max-width: 250px;
+        width: auto;
     }
 }
 
@@ -552,11 +540,12 @@ label {
     text-align: center;
     padding: 25px 25px 25px 25px;
     margin-top: 25px;
+    font-size: 14px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .carousel-style {
-        font-size: 14px;
+        font-size: 1rem;
     }
 }
 
@@ -584,7 +573,6 @@ label {
 .carousel-control-next {
     padding-left: 20px;
 }
-
 
 /*------ Footer ------*/
 
@@ -656,30 +644,20 @@ footer {
     border-radius: .25rem;
 }
 
-
-
-@media (max-width: 768px) {
-    .footer-image {
-        display: none;
-    }
-}
-
-
 --------*/
 
 /*------ Meet the team ------*/
 
 .who-are-we {
     text-align: center;
+    padding-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .who-are-we {
-        padding-top: 10px;
+        padding-top: 0px;
     }
 }
-
-
 .meet-the-team-text {
     letter-spacing: 1px;
     text-align: center;
@@ -699,12 +677,12 @@ footer {
     font-weight: 500;
 }
 
-@media (max-width: 576px) {
-    .build-specs-heading {
-        display:none;
-    }
+.build-specs-heading {
+    display: none;
+}
 
-    .block-divider-two {
-        display: none;
+@media (min-width: 576px) {
+    .build-specs-heading {
+        display: unset;
     }
 }
