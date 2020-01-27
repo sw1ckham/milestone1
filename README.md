@@ -83,11 +83,9 @@ other open questions.</p>
 </li>
 </ol>
 
-I have had feedback that the social links to do open. This is correct and due to the fact I have not received them yet from the business owner.
-I will complete this before the website goes fully live. 
 
 I have also had feedback that when opening the 'Click Here' PDF on the 'Meet the Team' page, under, 'Building regulations', 
-that is does open a new browser but nothing shows on the PDF. I need to troubleshoot this problem and get another PDF sent from the 
+that is does open a new browser but nothing shows on the PDF. I will troubleshoot this problem and get another PDF sent from the 
 business owner.
 
 <h3>Deployment</h3>
@@ -95,7 +93,7 @@ business owner.
 This website was creating using WebStorm IDE, a local git directory was used for version control, and then uploaded 
 to GitHub. I have made it live using Git pages. To do this I initiated the git repository with 'git innit', then used 'git status' 
 to see which of my un-tracked files had not been added to the new repository. I used 'git commit -m "added in a specific message" to commit
-my changed files to the repository. Once my files were commited I used 'git push' to push all my new and changed files to GitHub
+my changed files to the repository. Once my files were committed I used 'git push' to push all my new and changed files to GitHub
 before making it live with Git pages. I did this every time I made major changes to any part of my site.  
 
 <h2>Credits</h2>

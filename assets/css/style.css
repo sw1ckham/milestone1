@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
 header {
-    margin:0;
+    margin: 0;
 }
 
 .body-div {
@@ -59,6 +59,7 @@ html {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    padding-bottom: 15px;
 }
 
 .meet-the-team-headings {
@@ -69,9 +70,9 @@ html {
     letter-spacing: 5px;
     padding: 5px 5px 5px 5px;
     border-radius: 8px;
-    -webkit-box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
-    -moz-box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
-    box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
+    -webkit-box-shadow: -2px 3px 13px -4px rgba(102, 99, 102, 1);
+    -moz-box-shadow: -2px 3px 13px -4px rgba(102, 99, 102, 1);
+    box-shadow: -2px 3px 13px -4px rgba(102, 99, 102, 1);
 
 }
 
@@ -83,9 +84,9 @@ html {
     letter-spacing: 5px;
     padding: 5px 5px 5px 5px;
     border-radius: 8px;
-    -webkit-box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
-    -moz-box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
-    box-shadow: -2px 3px 13px -4px rgba(102,99,102,1);
+    -webkit-box-shadow: -2px 3px 13px -4px rgba(102, 99, 102, 1);
+    -moz-box-shadow: -2px 3px 13px -4px rgba(102, 99, 102, 1);
+    box-shadow: -2px 3px 13px -4px rgba(102, 99, 102, 1);
     display: inline-block;
 }
 
@@ -103,7 +104,7 @@ html {
     text-align: center;
     color: #4caf50;
     font-weight: 400;
-    padding-top: 0px;
+    padding-top: 0;
     letter-spacing: 1px;
     line-height: 1.4;
     font-size: 30px;
@@ -120,7 +121,7 @@ html {
     text-align: center;
     color: #4caf50;
     font-weight: 400;
-    padding-top: 0px;
+    padding-top: 0;
     letter-spacing: 1px;
     line-height: 1.4;
     font-size: 20px;
@@ -149,18 +150,23 @@ html {
 .fa-1x {
     font-size: 1.5rem;
 }
+
 .navbar-toggler.toggler-example {
     cursor: pointer;
 }
+
 .dark-blue-text {
     color: #0A38F5;
 }
+
 .dark-pink-text {
     color: #AC003A;
 }
+
 .dark-amber-text {
     color: #ff6f00;
 }
+
 .dark-teal-text {
     color: #004d40;
 }
@@ -169,8 +175,8 @@ html {
 
 .logo {
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     margin: 5px 5px 5px 5px;
     background: url("../images/front-page-images/logo.png");
     background-position: center;
@@ -214,15 +220,15 @@ html {
 }
 
 .dropdown-menu {
-    background-color: rgba(248,249,250,1)
+    background-color: rgba(248, 249, 250, 1)
 }
 
 .navbar-dropdown-heading a {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
-    color: rgba(0,0,0,.9);
+    color: rgba(0, 0, 0, .9);
 }
 
 .dropdown {
@@ -246,7 +252,7 @@ html {
 .navbar-collapse {
     border-radius: 5px;
     padding-bottom: 5px;
-    background-color: rgba(248,249,250,1)
+    background-color: rgba(248, 249, 250, 1)
 }
 
 /*----- Banner image ------- */
@@ -289,15 +295,16 @@ html {
 
 @media (min-width: 576px) {
     .meet-the-team-img-main {
-        margin-top: 0px;
+        margin-top: 0;
     }
 }
 
 @media (min-width: 576px) {
     .meet-the-team-img {
-       margin-top: 0px;
+        margin-top: 0;
     }
 }
+
 /*------ Sections ------ */
 
 
@@ -307,7 +314,7 @@ html {
     width: 100%;
 }
 
-.enquire-section  {
+.enquire-section {
     width: 100%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.1);
@@ -322,9 +329,9 @@ html {
 
 @media (min-width: 768px) {
     .enquire-form {
-     padding-left: 0px;
-     padding-right: 0px;
- }
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .button-holder {
@@ -394,12 +401,13 @@ html {
         margin-bottom: 25px;
     }
 }
+
 .why-us-images {
-       display: block;
-       text-align: center;
-       cursor: pointer;
-       width: 100%;
-       height: 100%;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 
 .which-best {
@@ -442,9 +450,9 @@ html {
 }
 
 /*------ Testimonial Page -----*/
- .testimonial-section {
-     text-align: center;
- }
+.testimonial-section {
+    text-align: center;
+}
 
 .testimonial {
     text-align: center;
@@ -498,6 +506,7 @@ html {
 .enquire-form {
     padding: 25px 25px 25px 25px;
 }
+
 .formsection {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -523,16 +532,16 @@ label {
     margin-left: 0;
 }
 
-.form-group>.col {
+.form-group > .col {
     padding-right: 5px;
     padding-left: 5px;
 }
 
 
 .btn-holder {
-       padding-bottom: 5px;
-       padding-top: 5px;
- }
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
 
 /*------- review carousel -----*/
 
@@ -587,7 +596,7 @@ footer {
     text-align: center;
     margin-top: 30px;
     width: 100%;
-    padding-left: none;
+    padding-left: 0;
     margin-left: -15px;
     float: left;
 }
@@ -655,9 +664,10 @@ footer {
 
 @media (min-width: 768px) {
     .who-are-we {
-        padding-top: 0px;
+        padding-top: 0;
     }
 }
+
 .meet-the-team-text {
     letter-spacing: 1px;
     text-align: center;
