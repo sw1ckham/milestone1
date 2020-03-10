@@ -17,6 +17,13 @@
           crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_ix2ejPYiIR3iVrnoBTVKG");
+        })();
+    </script>
+
 
 </head>
 
@@ -102,30 +109,30 @@
             <div class="row no-gutters justify-content-center">
                 <div class="col-10 col-sm-5 col-md-4 enquire-form">
                     <h4 class="uppercase enquire-heading">Get in touch with us</h4>
-                    <form class="formsection">
+                    <form class="formsection" onsubmit="return sendMail(this);">
                         <div class="form-row">
                             <div class="col">
                                 <label>
-                                    <input type="text" class="form-control" placeholder="First name" required/>
+                                    <input type="text" name="firstName" class="form-control" placeholder="First name" required/>
                                 </label>
                             </div>
                             <div class="col">
                                 <label>
-                                    <input type="text" class="form-control" placeholder="Last name" required/>
+                                    <input type="text" name="secondName" class="form-control" placeholder="Last name" required/>
                                 </label>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col">
                                 <label>
-                                    <input type="email" class="form-control" id="inputEmail4"
+                                    <input type="email" name="email" class="form-control" id="inputEmail4"
                                            placeholder="Email"
                                            required/>
                                 </label>
                             </div>
                             <div class="col">
                                 <label>
-                                    <input type="tel" class="form-control" id="example-tel-input"
+                                    <input type="tel" name="telephone" class="form-control" id="example-tel-input"
                                            placeholder="Telephone"
                                            required/>
                                 </label>
@@ -134,14 +141,14 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>
-                                    <input type="text" class="form-control" id="inputAddress"
+                                    <input type="text" name="address" class="form-control" id="inputAddress"
                                            placeholder="Address"
                                            required/>
                                 </label>
                             </div>
                             <div class="col">
                                 <label>
-                                    <input type="text" class="form-control" id="inputZip"
+                                    <input type="text" name="postCode" class="form-control" id="inputZip"
                                            placeholder="Post Code"
                                            required/>
                                 </label>
@@ -151,7 +158,7 @@
                             <div class="col">
                                 <label for="exampleFormControlTextarea1" class="message-text">Your
                                     Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
                                           rows="3"></textarea>
                             </div>
                         </div>
@@ -207,6 +214,8 @@
         </div>
     </div>
 </footer>
+
+<script type="text/javascript" src="assets/js/contact.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
