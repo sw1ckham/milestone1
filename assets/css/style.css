@@ -241,6 +241,15 @@ body {
     margin-top: 100px;
 }
 
+.parralex {
+  background-image: url("assets/images/front-page-images/front-page-photo.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*------ Images-------*/
 
 .meet-the-team-img {
