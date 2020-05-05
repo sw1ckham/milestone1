@@ -146,8 +146,6 @@ body {
     cursor: pointer;
 }
 
-/* End of styling that came from Mentor */
-
 .logo {
     position: absolute;
     top: 0;
@@ -184,6 +182,10 @@ body {
 
 .request-btn {
     margin-left: 15px;
+}
+
+.nav-item .active {
+    background-color: red;
 }
 
 /*----------- Dropdown -----------*/ /*------ got my dropdown code from W3 Schools ------- */
@@ -266,6 +268,26 @@ body {
     margin-top: 20px;
 }
 
+/*---- Buttons ---*/
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    background-color: #4caf50;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    border-radius: 50%;
+}
+
+.gotopbtn:hover {
+    color: white;
+}
+
 /*------ Sections ------ */
 
 .build-specs-section {
@@ -301,6 +323,7 @@ body {
 .enquire-form {
     padding-left: 50px;
     padding-right: 50px;
+    line-height: 50px;
 }
 
 .button-holder {
@@ -673,6 +696,12 @@ footer {
     }
 }
 
+@media (min-width: 1024px) {
+    .main-section-heading {
+        font-size: 2rem;
+    }
+}
+
 @media (min-width: 1200px) {
     .social {
         margin-left: -55px;
@@ -690,6 +719,8 @@ footer {
         margin-top: 30px;
     }
 }
+
+/* --- Modal Images ---*/
 
 
 /* The Modal (background) */
@@ -770,7 +801,7 @@ footer {
 }
 
 
-
+/* --- Reveal on Scroll ---*/
 
 #reveal1 {
 		opacity: 0;
