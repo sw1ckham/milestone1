@@ -12,8 +12,11 @@ header {
     margin-top: 100px;
 }
 
-html {
+html,
+body {
     scroll-behavior: smooth;
+    height: 100%;
+    position: relative;
 }
 
 /*----- Block - Dividers ----*/
@@ -22,6 +25,7 @@ html {
     width: 70%;
     height: 1px;
     background-color: #4caf50;
+    margin-bottom: 25px;
 }
 
 .block-divider-test {
@@ -88,7 +92,7 @@ html {
     text-align: center;
     color: #4caf50;
     font-weight: 500;
-    padding-top: 10px;
+    padding-top: 50px;
     letter-spacing: 1px;
     line-height: 1.4;
 }
@@ -97,7 +101,7 @@ html {
     text-align: center;
     color: #4caf50;
     font-weight: 400;
-    padding-top: 0;
+    padding-top: 30px;
     letter-spacing: 1px;
     line-height: 1.4;
     font-size: 30px;
@@ -280,7 +284,7 @@ html {
 
 .enquire-section {
     width: 100%;
-    height: auto;
+    height: 60vh;
     background-color: rgba(0, 0, 0, 0.1);
     padding-top: 30px;
     padding-bottom: 20px;
@@ -312,13 +316,13 @@ html {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.4s;
+    /* transition-timing-function: ease-in-out;
+    transition-duration: 0.4s; */
 }
 
-.interior-gallery img:hover {
+/* .interior-gallery img:hover {
     transform: scale(1.1);
-}
+} */
 
 /*------ Exterior Gallery Page ------ */
 
@@ -335,15 +339,15 @@ html {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    transition: transform;
+    /* transition: transform;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.4s;
+    transition-duration: 0.4s; */
 }
 
 
-.exterior-gallery img:hover {
+/* .exterior-gallery img:hover {
     transform: scale(1.1);
-}
+} */
 
 /*--------- Why-us-section-homepage ----- */
 
@@ -523,10 +527,20 @@ label {
 
 /*------ Footer ------*/
 
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 160px; /* height of your footer */
+}
+
 footer {
+    position: absolute;
     background-color: #9a9a9a;
     bottom: 0;
     width: 100%;
+    height: 160px;
 }
 
 .social {
@@ -605,7 +619,6 @@ footer {
 @media (min-width: 425px) {
     .homepage-main-heading {
         font-weight: 500;
-        padding-top: 10px;
     }
 }
 
@@ -670,3 +683,80 @@ footer {
     }
 }
 
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 500px;
+}
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
