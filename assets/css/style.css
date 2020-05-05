@@ -18,7 +18,6 @@ html {
 
 /*----- Block - Dividers ----*/
 
-
 .block-divider {
     width: 70%;
     height: 1px;
@@ -37,12 +36,6 @@ html {
 
 /*------ Headings ------- */
 
-/*-----.follow-us-heading {
-    color: #4caf50;
-    text-align: center;
-    font-size: 30px;
-
-}-----*/
 .heading {
     color: #4caf50;
     padding-top: 20px;
@@ -110,12 +103,6 @@ html {
     font-size: 30px;
 }
 
-@media (min-width: 425px) {
-    .homepage-main-heading {
-        font-weight: 500;
-        padding-top: 10px;
-    }
-}
 
 .homepage-tagline-heading {
     text-align: center;
@@ -127,13 +114,6 @@ html {
     font-size: 20px;
 }
 
-@media (min-width: 425px) {
-    .homepage-tagline-heading {
-        font-weight: 500;
-        padding-top: 10px;
-    }
-}
-
 .build-specs-heading {
     text-align: center;
     color: #4caf50;
@@ -141,11 +121,10 @@ html {
     padding-top: 10px;
     letter-spacing: 1px;
     line-height: 1.4;
+    align-content: center;
 }
 
 /*------ Nav Bar ------*/
-
-/*--- Nav bar styling came from Mentor ---*/
 
 .fa-1x {
     font-size: 1.5rem;
@@ -155,20 +134,12 @@ html {
     cursor: pointer;
 }
 
-.dark-blue-text {
-    color: #0A38F5;
+.dropdown-item:active {
+    background-color: #4caf50;
 }
 
-.dark-pink-text {
-    color: #AC003A;
-}
-
-.dark-amber-text {
-    color: #ff6f00;
-}
-
-.dark-teal-text {
-    color: #004d40;
+.nav-link {
+    cursor: pointer;
 }
 
 /* End of styling that came from Mentor */
@@ -262,8 +233,6 @@ html {
     height: auto;
     background-repeat: no-repeat;
     margin-top: 100px;
-    /* margin-left: 15%;
-    margin-right: 15%; */
 }
 
 /*------ Images-------*/
@@ -293,20 +262,15 @@ html {
     margin-top: 20px;
 }
 
-@media (min-width: 576px) {
-    .meet-the-team-img-main {
-        margin-top: 0;
-    }
-}
-
-@media (min-width: 576px) {
-    .meet-the-team-img {
-        margin-top: 0;
-    }
-}
-
 /*------ Sections ------ */
 
+.build-specs-section {
+    text-align: center;
+}
+
+.contact-us-section {
+    padding: 0;
+}
 
 .main-section {
     margin-bottom: 0;
@@ -325,13 +289,6 @@ html {
 .enquire-form {
     padding-left: 50px;
     padding-right: 50px;
-}
-
-@media (min-width: 768px) {
-    .enquire-form {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 .button-holder {
@@ -393,13 +350,6 @@ html {
 .why-us-text {
     padding-top: 25px;
     margin-bottom: 0;
-
-}
-
-@media (min-width: 992px) {
-    .why-us-text {
-        margin-bottom: 25px;
-    }
 }
 
 .why-us-images {
@@ -408,7 +358,9 @@ html {
     cursor: pointer;
     width: 100%;
     height: 100%;
+    padding: 10px;
 }
+
 
 .which-best {
 
@@ -416,7 +368,6 @@ html {
     margin: 25px 25px 25px 25px;
     transition-timing-function: ease-in-out;
     transition-duration: 0.4s;
-
 }
 
 .trading-standards {
@@ -424,16 +375,13 @@ html {
     height: 145px;
     transition-timing-function: ease-in-out;
     transition-duration: 0.4s;
-
 }
 
 .guarantee {
-
     height: 100px;
     margin: 25px 25px 25px 25px;
     transition-timing-function: ease-in-out;
     transition-duration: 0.4s;
-
 }
 
 .which-best:hover,
@@ -450,6 +398,7 @@ html {
 }
 
 /*------ Testimonial Page -----*/
+
 .testimonial-section {
     text-align: center;
 }
@@ -479,12 +428,6 @@ html {
     max-width: 250px;
 }
 
-@media (min-width: 350px) {
-    .test-images {
-        width: auto;
-    }
-}
-
 .review-name-text {
     position: relative;
 }
@@ -503,6 +446,7 @@ html {
 }
 
 /*------- Form--------*/
+
 .enquire-form {
     padding: 25px 25px 25px 25px;
 }
@@ -552,12 +496,6 @@ label {
     font-size: 14px;
 }
 
-@media (min-width: 768px) {
-    .carousel-style {
-        font-size: 1rem;
-    }
-}
-
 .carousel-image {
     height: 100px;
     width: 200px;
@@ -586,10 +524,9 @@ label {
 /*------ Footer ------*/
 
 footer {
-    background-color: #262424;
+    background-color: #9a9a9a;
     bottom: 0;
     width: 100%;
-
 }
 
 .social {
@@ -601,15 +538,9 @@ footer {
     float: left;
 }
 
-@media (min-width: 1200px) {
-    .social {
-        margin-left: -55px;
-    }
-}
 
-
-.list-inline {
-    color: #007bff;
+.list-inline a {
+    color: #fff;
     position: relative;
     display: inline-block;
     font-size: 50px;
@@ -626,46 +557,11 @@ footer {
     width: 100%;
 }
 
-/*----- To be added after submission
-
-.footer-text {
-    color: #4caf50;
-    font-weight: 600;
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-}
-
-.footer-text span {
-    position: absolute;
-    bottom: 0;
-    justify-content: center;
-}
-
-.footer-text a {
-    color: #4caf50;
-}
-
-.footer-image {
-    float: right;
-    max-width: 250px;
-    margin-top: 20px;
-    border-radius: .25rem;
-}
-
---------*/
-
 /*------ Meet the team ------*/
 
 .who-are-we {
     text-align: center;
     padding-top: 10px;
-}
-
-@media (min-width: 768px) {
-    .who-are-we {
-        padding-top: 0;
-    }
 }
 
 .meet-the-team-text {
@@ -691,8 +587,86 @@ footer {
     display: none;
 }
 
+/*---- Media Queries ---*/
+
+@media (min-width: 350px) {
+    .test-images {
+        width: auto;
+    }
+}
+
+@media (min-width: 425px) {
+    .homepage-tagline-heading {
+        font-weight: 500;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 425px) {
+    .homepage-main-heading {
+        font-weight: 500;
+        padding-top: 10px;
+    }
+}
+
 @media (min-width: 576px) {
     .build-specs-heading {
         display: unset;
     }
 }
+
+@media (min-width: 576px) {
+    .meet-the-team-img-main {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .meet-the-team-img {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .who-are-we {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-style {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .enquire-form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .why-us-text {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .social {
+        margin-left: -55px;
+    }
+}
+
+@media (min-width: 1685px) {
+    .why-us-images a img {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1685px) {
+    .why-us-text {
+        margin-top: 30px;
+    }
+}
+
