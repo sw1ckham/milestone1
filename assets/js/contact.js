@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 function sendMail(contactForm) {
     emailjs.send("gmail", "southwicks", {
         "from_firstname": contactForm.firstName.value,
@@ -20,6 +22,4 @@ function sendMail(contactForm) {
     return false;
 }
 
-$(".dropdown-menu")click(function(){
-    $(".navbar-dropdown-heading").css("background-color", "green");
-})
+});

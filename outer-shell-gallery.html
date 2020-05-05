@@ -94,46 +94,50 @@
 
                 <div class="container-fluid">
                     <div class="row interior-gallery-section">
-                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img src="assets/images/outer-shells-images/outer-shells-1.jpg" alt="Inside Wooden Beams">
-                            <img src="assets/images/outer-shells-images/outer-shells-3.jpg" alt="Inside Cosy Cabin">
+                        <div id="myModal" class="modal">
+                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                            <img class="modal-content" id="img01">
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img src="assets/images/outer-shells-images/outer-shells-4.jpg" alt="Inside Garden Cabin">
-                            <img src="assets/images/outer-shells-images/outer-shells-17.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-1.jpg" alt="Inside Wooden Beams">
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-3.jpg" alt="Inside Cosy Cabin">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-4.jpg" alt="Inside Garden Cabin">
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-17.jpg"
                                  alt="Inside Garden room with dark wooden doors">
 
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img src="assets/images/outer-shells-images/outer-shells-5.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-5.jpg"
                                  alt="View of the inside of a Garden Cabin">
-                            <img src="assets/images/outer-shells-images/outer-shells-6.jpg" alt="Inside a Gym Garden room">
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-6.jpg" alt="Inside a Gym Garden room">
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img src="assets/images/outer-shells-images/outer-shells-7.jpg" alt="Chill out Garden room">
-                            <img src="assets/images/outer-shells-images/outer-shells-8.jpg" alt="Airy Grey Garden Cabin">
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-7.jpg" alt="Chill out Garden room">
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-8.jpg" alt="Airy Grey Garden Cabin">
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img src="assets/images/outer-shells-images/outer-shells-9.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-9.jpg"
                                  alt="Inside Large Garden room">
-                            <img src="assets/images/outer-shells-images/outer-shells-10.jpg" alt="Garden Room with a Desk">
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-10.jpg" alt="Garden Room with a Desk">
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img src="assets/images/outer-shells-images/outer-shells-11.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-11.jpg"
                                  alt="Inside Garden room roof and lights">
-                            <img src="assets/images/outer-shells-images/outer-shells-12.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-12.jpg"
                                  alt="Garden Room with laminant flooring">
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img src="assets/images/outer-shells-images/outer-shells-13.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-13.jpg"
                                  alt="Inside Garden room with dark wooden doors">
-                            <img src="assets/images/outer-shells-images/outer-shells-14.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-14.jpg"
                                  alt="Inside Garden room with statement windows">
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img src="assets/images/outer-shells-images/outer-shells-15.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-15.jpg"
                                  alt="Inside Garden room with dark wooden doors">
-                            <img src="assets/images/outer-shells-images/outer-shells-16.jpg"
+                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-16.jpg"
                                  alt="Inside Garden room with statement windows">
                         </div>
                     </div>
@@ -294,13 +298,6 @@
                         </li>
                     </ul>
                 </div>
-                <!------ to be added after submission
-                <div class="col-12 col-md-3 footer-text">
-                    <p><span><a href="sitemap.html">Site Map</a></span></p>
-                </div>
-                <div class="col-5 col-md-4">
-                    <img class="footer-image" src="assets/images/front-page-images/footer-image.jpg" alt="footer image">
-                </div> -->
                 <div class="row no-gutters justify-content-center copyright">
                     <div class="col-12">
                         <p>All content © 2015 - 2020 www.southwicks.co.uk.
@@ -314,10 +311,16 @@
 
 </div>
 
-<script type="text/javascript" src="assets/js/contact.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+<script type="text/javascript" src="assets/js/scroll.js"></script>
+<script type="text/javascript" src="assets/js/img.js"></script>
+<script type="text/javascript" src="assets/js/contact.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
