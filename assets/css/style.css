@@ -250,7 +250,7 @@ body {
   height: 300px;
   width: 100%;
   text-align: center;
-  background-image: url("/assets/images/front-page-images/front-page-photo.jpg");
+  background-image: url("../images/front-page-images/front-page-photo.jpg");
   background-attachment: fixed;
   background-position: center 100px;
   background-repeat: no-repeat;
