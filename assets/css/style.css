@@ -192,7 +192,11 @@ body {
 }
 
 .nav-item .active {
-    background-color: red;
+    background-color: #4caf50;
+}
+
+.navbar-light .navbar-toggler {
+    outline: none;
 }
 
 /*----------- Dropdown -----------*/ /*------ got my dropdown code from W3 Schools ------- */
@@ -337,11 +341,6 @@ body {
     border-radius: 50%;
 }
 
-@media (min-width: 768px) {
-    .gotopbtn-gallery {
-        display: none;
-    }
-}
 
 .gotopbtn:hover,
 .gotopbtn-gallery:hover {
@@ -448,7 +447,7 @@ body {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 
 
@@ -621,7 +620,7 @@ label {
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 160px; /* height of your footer */
+    padding-bottom: 240px; /* height of your footer */
 }
 
 footer {
@@ -629,18 +628,14 @@ footer {
     background-color: #9a9a9a;
     bottom: 0;
     width: 100%;
-    height: 160px;
+    height: 240px;
 }
 
 .social {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
     width: 100%;
-    padding-left: 0;
-    margin-left: -15px;
-    float: left;
 }
-
 
 .list-inline a {
     color: #fff;
@@ -658,10 +653,12 @@ footer {
     color: #fff;
     font-size: small;
     text-align: center;
-    padding-top: 10px;
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
     width: 100%;
+    bottom: 10px;
+    position: absolute;
 }
 
 /*------ Meet the team ------*/
@@ -695,6 +692,9 @@ footer {
 }
 
 /*---- Media Queries ---*/
+
+
+
 
 @media (min-width: 350px) {
     .test-images {
@@ -759,6 +759,12 @@ footer {
     }
 }
 
+@media (min-width: 768px) {
+    .gotopbtn {
+        display: none;
+    }
+}
+
 @media (min-width: 992px) {
     .why-us-text {
         margin-bottom: 25px;
@@ -771,21 +777,22 @@ footer {
     }
 }
 
-@media (min-width: 1200px) {
-    .social {
-        margin-left: -55px;
-    }
-}
-
-@media (min-width: 1685px) {
-    .why-us-images a img {
-        margin-bottom: 50px;
-    }
-}
 
 @media (min-width: 1685px) {
     .why-us-text {
         margin-top: 30px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .enquire-section {
+        height: 700px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .contact-section {
+        height: 75vh;
     }
 }
 
