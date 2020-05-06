@@ -19,6 +19,11 @@ body {
     position: relative;
 }
 
+.error-image {
+    width: 500px;
+    height: 400px;
+}
+
 /*----- Block - Dividers ----*/
 
 .block-divider {
@@ -95,6 +100,8 @@ body {
     padding-top: 50px;
     letter-spacing: 1px;
     line-height: 1.4;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .homepage-main-heading {
@@ -236,16 +243,41 @@ body {
 
 
 .scrollDesign {
-  background-image: url("/assets/images/front-page-images/front-page-photo.jpg");
-  height: 98vh;;
+  height: 300px;
   width: 100%;
+  text-align: center;
+  background-image: url("/assets/images/front-page-images/front-page-photo.jpg");
   background-attachment: fixed;
   background-position: center 100px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   padding: 0;
   margin: 0;
   
+}
+
+@media (min-width: 768px) {
+    .scrollDesign {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .scrollDesign {
+        height: 650px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .scrollDesign {
+        height: 800px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .scrollDesign {
+        height: 1400px;
+    }
 }
 
 /*------ Images-------*/
@@ -291,8 +323,33 @@ body {
     border-radius: 50%;
 }
 
-.gotopbtn:hover {
+.gotopbtn-gallery {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 2px;
+    background-color: #4caf50;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
     color: white;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .gotopbtn-gallery {
+        display: none;
+    }
+}
+
+.gotopbtn:hover,
+.gotopbtn-gallery:hover {
+    color: white;
+}
+
+.error-btn {
+    margin-top: 50px;
 }
 
 /*------ Sections ------ */
@@ -335,6 +392,10 @@ body {
 
 .button-holder {
     text-align: center;
+}
+
+.d-flex form{
+  flex-grow: 1
 }
 
 /*-------- Interior Gallery Page----------*/
@@ -589,6 +650,10 @@ footer {
     text-align: center;
 }
 
+.list-inline a:hover {
+    color: #4caf50;
+}
+
 .copyright {
     color: #fff;
     font-size: small;
@@ -647,6 +712,7 @@ footer {
 @media (min-width: 425px) {
     .homepage-main-heading {
         font-weight: 500;
+        font-size: 1.7rem;
     }
 }
 
