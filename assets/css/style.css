@@ -234,20 +234,18 @@ body {
 
 /*----- Banner image ------- */
 
-.img-fluid {
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    margin-top: 100px;
-}
 
-.parralex {
-  background-image: url("assets/images/front-page-images/front-page-photo.jpg");
-  height: 500px;
+.scrollDesign {
+  background-image: url("/assets/images/front-page-images/front-page-photo.jpg");
+  height: 98vh;;
+  width: 100%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center 100px;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0;
+  margin: 0;
+  
 }
 
 /*------ Images-------*/
@@ -310,7 +308,7 @@ body {
 .main-section {
     margin-bottom: 0;
     padding-bottom: 0;
-    width: 100%;
+    width: 100%; 
 }
 
 .enquire-section {
@@ -356,13 +354,8 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    /* transition-timing-function: ease-in-out;
-    transition-duration: 0.4s; */
 }
 
-/* .interior-gallery img:hover {
-    transform: scale(1.1);
-} */
 
 /*------ Exterior Gallery Page ------ */
 
@@ -379,15 +372,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    /* transition: transform;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.4s; */
 }
-
-
-/* .exterior-gallery img:hover {
-    transform: scale(1.1);
-} */
 
 /*--------- Why-us-section-homepage ----- */
 
@@ -565,6 +550,9 @@ label {
     padding-left: 20px;
 }
 
+.review-name {
+    padding-top: 25px;
+}
 /*------ Footer ------*/
 
 .main-container {
@@ -696,6 +684,12 @@ footer {
     .enquire-form {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .review-section {
+        display: none!important;
     }
 }
 
