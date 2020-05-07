@@ -30,7 +30,6 @@ body {
     width: 70%;
     height: 1px;
     background-color: #4caf50;
-    margin-bottom: 25px;
 }
 
 .block-divider-test {
@@ -373,6 +372,7 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     padding-top: 30px;
     padding-bottom: 20px;
+    margin-top: 25px;
 }
 
 .contact-section {
@@ -381,6 +381,10 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     padding-top: 30px;
     padding-bottom: 20px;
+}
+
+.guarantee-section {
+    padding-top: 20px;
 }
 
 .enquire-form {
@@ -652,6 +656,10 @@ footer {
 
 .list-inline a:hover {
     color: #4caf50;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 
 .copyright {
@@ -668,6 +676,7 @@ footer {
 
 .site-links {
     text-align: center;
+    letter-spacing: 3px;
 }
 
 .site-links a {
@@ -678,6 +687,10 @@ footer {
 
 .site-links a:hover {
     color: #4caf50;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 
 /*------ Meet the team ------*/
@@ -714,6 +727,27 @@ footer {
 
 .site-map {
     text-align: center;
+}
+
+/*-- Guarantee ---*/
+
+.guarantee-pic {
+    height: auto;
+    width: 200px;
+    border-radius: 5px;
+}
+
+/*-- Sheds--*/
+
+.new-image {
+    height: auto;
+    width: 100px;
+    
+}
+
+.new {
+    margin-right: 50px;
+    display: inline;
 }
 
 /*---- Media Queries ---*/

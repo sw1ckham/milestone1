@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Southwick's</title>
-    <link rel="shortcut icon" type="image.png" href="assets/images/front-page-images/favIcon1.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
@@ -16,6 +15,7 @@
           rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
           crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
@@ -32,7 +32,7 @@
 
     <header>
 
-        <!--- Nav Bar code sent from Mentor then edited by me-->
+        <!--- Nav Bar code send from Mentor then edited by me -->
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a href="index.html" class="col-md-2 logo"></a>
@@ -47,7 +47,7 @@
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
 
-                    <!-- Nav bar drop down came from Bootstrap - https://getbootstrap.com/docs/4.1/components/dropdowns/ -->
+                    <!---- Nav bar drop down came from Bootstrap - https://getbootstrap.com/docs/4.1/components/dropdowns/ -->
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -61,15 +61,17 @@
                         </div>
                     </li>
 
+                    <!---- Nav bar drop down came from Bootstrap - https://getbootstrap.com/docs/4.1/components/dropdowns/ -->
+
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             Gallery
                         </a>
                         <div class="dropdown-menu navbar-dropdown-heading" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="interior-gallery.html">Interior</a>
+                            <a class="dropdown-item active" href="interior-gallery.html">Interior</a>
                             <a class="dropdown-item" href="exterior-gallery.html">Exterior</a>
-                            <a class="dropdown-item active" href="outer-shell-gallery.html">Outer Shells</a>
+                            <a class="dropdown-item" href="outer-shell-gallery.html">Outer Shells</a>
                         </div>
                     </li>
 
@@ -96,72 +98,48 @@
 
     <section>
 
+
         <div class="nav-margin-div">
 
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <h4 class="main-section-heading"><strong>Outer Shells Gallery</strong></h4>
+                        <h4 class="main-section-heading"><div class="new"><img class="new-image" src="/assets/images/shed-images/new-icon.png" alt="New!"></div><strong>Sheds and Summer Houses</strong></h4>
                     </div>
                 </div>
 
                 <hr class="block-divider">
 
                 <div class="container-fluid">
-                    <div class="row interior-gallery-section">
-                        <div id="myModal" class="modal">
-                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                            <img class="modal-content" id="img01">
+                    <div class="row interior-gallery-section justify-content-around">
+                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
+                            <div id="myModal" class="modal">
+                                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                                <img class="modal-content" id="img01">
+                            </div>
+                            <img class="myImg" src="assets/images/shed-images/shed1.jpg" alt="Inside Cosy Cabin">
+                            <ul class="build-specs-text shed-text">
+                                <li>Top quality and great prices</li>
+                                <li>British manufactured</li>
+                                <li>10 Year guarantee</li>
+                            </ul>
+                            <img class="myImg" src="assets/images/shed-images/shed2.jpg" alt="Inside Garden Cabin">
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-1.jpg" alt="Inside Wooden Beams">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-3.jpg" alt="Inside Cosy Cabin">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-4.jpg" alt="Inside Garden Cabin">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-17.jpg"
-                                 alt="Inside Garden room with dark wooden doors">
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-5.jpg"
-                                 alt="View of the inside of a Garden Cabin">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-6.jpg" alt="Inside a Gym Garden room">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-7.jpg" alt="Chill out Garden room">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-8.jpg" alt="Airy Grey Garden Cabin">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-9.jpg"
-                                 alt="Inside Large Garden room">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-10.jpg" alt="Garden Room with a Desk">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-11.jpg"
-                                 alt="Inside Garden room roof and lights">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-12.jpg"
-                                 alt="Garden Room with laminant flooring">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-13.jpg"
-                                 alt="Inside Garden room with dark wooden doors">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-14.jpg"
-                                 alt="Inside Garden room with statement windows">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 interior-gallery">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-15.jpg"
-                                 alt="Inside Garden room with dark wooden doors">
-                            <img class="myImg" src="assets/images/outer-shells-images/outer-shells-16.jpg"
-                                 alt="Inside Garden room with statement windows">
+                            <img class="myImg" src="assets/images/shed-images/shed3.jpg" alt="View of the inside of a Garden Cabin">
+                            <div class="shed-text"></div>
+                            <ul class="build-specs-text shed-text">
+                                <li>Free and Fast delivery</li>
+                                <li>Highly versatile range</li>
+                            </ul>
+                            <img class="myImg" src="assets/images/shed-images/shed4.jpg" alt="Inside a Gym Garden room">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <!---- Code from Bootstrap Forms https://getbootstrap.com/docs/4.1/components/forms/-->
+        <!---- Code from Bootstrap Forms https://getbootstrap.com/docs/4.1/components/forms/ -->
 
         <div class="container-fluid enquire-section align-items-center d-flex">
             <div class="row no-gutters justify-content-center">
@@ -285,7 +263,8 @@
                 </div>
             </div>
         </div>
-            <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+        <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
 
     </section>
 
@@ -329,6 +308,7 @@
     </footer>
 
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
