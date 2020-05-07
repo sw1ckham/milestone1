@@ -450,6 +450,11 @@ body {
     padding: 20px;
 }
 
+.which-best:hover,
+.trading-standards:hover {
+    opacity: 0.5;
+    }
+
 
 .which-best {
 
@@ -651,7 +656,7 @@ footer {
 
 .copyright {
     color: #fff;
-    font-size: small;
+    font-size: 8px;
     text-align: center;
     padding-right: 10px;
     padding-left: 10px;
@@ -659,6 +664,20 @@ footer {
     width: 100%;
     bottom: 10px;
     position: absolute;
+}
+
+.site-links {
+    text-align: center;
+}
+
+.site-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.site-links a:hover {
+    color: #4caf50;
 }
 
 /*------ Meet the team ------*/
@@ -689,6 +708,12 @@ footer {
 
 .build-specs-heading {
     display: none;
+}
+
+/* --- Sitemap ---*/
+
+.site-map {
+    text-align: center;
 }
 
 /*---- Media Queries ---*/
@@ -762,6 +787,12 @@ footer {
     }
 }
 
+@media (min-width: 768px) {
+    .copyright {
+        font-size: 12px;
+    }
+}
+
 @media (min-width: 992px) {
     .why-us-text {
         margin-bottom: 25px;
@@ -774,18 +805,13 @@ footer {
     }
 }
 
-@media (min-width: 1024px) {
-    .social {
-        margin-top: 60px;
+
+@media (min-width: 1440px) {
+    .site-links {
+        font-size: 20px;
     }
 }
 
-
-@media (min-width: 1685px) {
-    .why-us-text {
-        margin-top: 30px;
-    }
-}
 
 @media (min-width: 2560px) {
     .enquire-section {
@@ -798,6 +824,14 @@ footer {
         height: 75vh;
     }
 }
+
+@media (min-width: 2560px) {
+    .copyright {
+        font-size: 16px;
+    }
+}
+
+
 
 /* --- Modal Images ---*/
 
