@@ -420,6 +420,10 @@ body {
     border-radius: 5px;
 }
 
+.interior-gallery {
+    position: relative;
+}
+
 
 /*------ Exterior Gallery Page ------ */
 
@@ -436,6 +440,15 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.photo-numbers {
+    float: right;
+    font-size: 1rem;
+    color: #4caf50;
+    font-weight: 700;
+    margin-bottom:0;
+    position: absolute;
 }
 
 /*--------- Why-us-section-homepage ----- */
