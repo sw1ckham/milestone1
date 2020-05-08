@@ -642,7 +642,7 @@ footer {
 
 .social {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -670,7 +670,19 @@ footer {
     padding-left: 10px;
     padding-top: 10px;
     width: 100%;
-    bottom: 10px;
+    bottom: 5px;
+    position: absolute;
+}
+
+.location-text {
+    color: #fff;
+    font-size: 8px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    bottom: 40px;
+    width: 100%;
     position: absolute;
 }
 
@@ -823,7 +835,27 @@ footer {
 
 @media (min-width: 768px) {
     .copyright {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .location-text {
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .copyright {
         font-size: 12px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .location-text {
+        font-size: 12px;
+        bottom: 30px;
     }
 }
 
