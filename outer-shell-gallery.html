@@ -23,7 +23,6 @@
         })();
     </script>
 
-
 </head>
 
 <body>
@@ -253,7 +252,7 @@
             <div class="row no-gutters justify-content-center">
                 <div class="col-11 col-lg-4 enquire-form">
                     <h4 class="uppercase enquire-heading">We would love to hear from you</h4>
-                    <form class="formsection" onsubmit="return sendMail(this);">
+                    <form method="POST" id="contact-form" class="formsection" onsubmit="return emailjs.sendForm(this);">
                         <div class="form-row">
                             <div class="col">
                                 <label>
@@ -302,7 +301,7 @@
                             </div>
                         </div>
                         <div class="col-6-md button-holder">
-                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" value="Send" class="btn btn-success">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -426,7 +425,6 @@
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.js" integrity="sha256-mfgvzVjyIcoXo0ElsT8uFIuDWYkvKCQ6wrkm6If7iug=" crossorigin="anonymous"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>

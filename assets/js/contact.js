@@ -1,25 +1,15 @@
 $(document).ready(function(){
-
-function sendMail(contactForm) {
-    emailjs.send("gmail", "southwicks", {
-        "from_firstname": contactForm.firstName.value,
-        "from_secondname": contactForm.secondName.value,
-        "from_email": contactForm.email.value,
-        "from_telephone": contactForm.telephone.value,
-        "from_address": contactForm.address.value,
-        "from_postcode": contactForm.postCode.value,
-        "message": contactForm.message.value
-    })
-        .then(
-            function(response) {
-                console.log("SUCCESS", response);
-            },
-            function(error) {
-                console.log("FAILED", error);
-            }
-
-        );
-    return false;
-}
-
+            window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event){
+                event.preventDefault();
+                emailjs.sendForm('contact_service', 'southwicks', '#contact-form')
+                .then(function(response) {
+                    if (response.status == 200 && response.text == 'OK')
+                        alert('Your message has been sent successfully!');
+                    else 
+                        alert('Sorry there was a problem, please refresh your browser and try again.');
+                        document.getElementById('contact-form').reset();
+                });
+            });
+        };
 });
