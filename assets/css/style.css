@@ -136,6 +136,10 @@ body {
 
 /*------ Nav Bar ------*/
 
+.navbar-collapse {
+    height: auto;
+}
+
 .fa-1x {
     font-size: 1.5rem;
 }
@@ -182,12 +186,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 
 }
 
+
 .request-btn {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .nav-item .active {
@@ -424,6 +429,25 @@ body {
     position: relative;
 }
 
+/*-- OuterShells-Gallery --*/
+
+.outshells-gallery {
+    position: relative;
+}
+
+.outshells-gallery img {
+    margin-top: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+ #edit {
+    padding-top: 50px;
+}
 
 /*------ Exterior Gallery Page ------ */
 
@@ -449,7 +473,16 @@ body {
     font-weight: 700;
     margin-bottom:0;
     position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
 }
+
+.full-gallery-link {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
 
 /*--------- Why-us-section-homepage ----- */
 
@@ -775,7 +808,30 @@ footer {
     display: inline;
 }
 
+.sheds-text {
+    letter-spacing: 1px;
+    line-height: 50px;
+    padding-top: 20px;
+    color: #716666;
+    font-weight: 500;
+    text-align: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
 /*---- Media Queries ---*/
+
+@media (min-width: 320px) {
+    .social {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 320px) {
+    .site-links {
+        letter-spacing: 0px;
+    }
+}
 
 @media (min-width: 350px) {
     .test-images {
@@ -812,6 +868,18 @@ footer {
 @media (min-width: 576px) {
     .meet-the-team-img {
         margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .social {
+        margin-top: 20px;
     }
 }
 
@@ -858,6 +926,12 @@ footer {
     }
 }
 
+@media (min-width: 1440px) {
+    .nav-link {
+        margin-left: 20px;
+    }
+}
+
 
 @media (min-width: 1440px) {
     .copyright {
@@ -884,6 +958,12 @@ footer {
     }
 }
 
+
+@media (max-width: 1024px) {
+    .request-btn {
+        display: none;
+    }
+}
 
 @media (min-width: 1440px) {
     .site-links {
@@ -919,7 +999,7 @@ footer {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 3; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
