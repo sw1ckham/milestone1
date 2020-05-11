@@ -9,6 +9,7 @@ $(document).ready(function(){
                     else 
                         alert('Sorry there was a problem, please refresh your browser and try again.');
                         document.getElementById('contact-form').reset();
+                        window.location.replace("index.html");
                 });
             });
         };
