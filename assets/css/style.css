@@ -132,7 +132,8 @@ body {
     padding-top: 10px;
     letter-spacing: 1px;
     line-height: 1.4;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 
 /*------ Nav Bar ------*/
@@ -203,12 +204,7 @@ body {
 .navbar-light .navbar-toggler {
     outline: none;
 }
-/* 
-@media (min-width: 992px) {
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0rem;
-    }
-} */
+
 
 /*----------- Dropdown -----------*/ /*------ got my dropdown code from W3 Schools ------- */
 
@@ -411,7 +407,9 @@ body {
 }
 
 .d-flex form{
-  flex-grow: 1
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1
 }
 
 /*-------- Interior Gallery Page----------*/
@@ -419,8 +417,11 @@ body {
 /*----- got gallery grid from www.w3schools.com/howto/howto_css_image_grid_responsive.asp ------ */
 
 .interior-gallery-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 4px;
     padding-bottom: 10px;
 }
@@ -460,8 +461,11 @@ body {
 /*------ Exterior Gallery Page ------ */
 
 .exterior-gallery-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 4px;
     padding-bottom: 10px;
 }
@@ -518,28 +522,42 @@ body {
 
     height: 100px;
     margin: 25px 25px 25px 25px;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in-out;
+         -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
 }
 
 .trading-standards {
 
     height: 145px;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in-out;
+         -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
 }
 
 .guarantee {
     height: 100px;
     margin: 25px 25px 25px 25px;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in-out;
+         -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
 }
 
 .which-best:hover,
 .trading-standards:hover,
 .guarantee:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 /*------- Meet-the-team-page------*/
@@ -661,7 +679,8 @@ label {
 .carousel-control-prev,
 .carousel-control-next {
     margin-bottom: 180px;
-    filter: invert(100%);
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
     z-index: 0;
 }
 
@@ -679,11 +698,11 @@ label {
 /*------ Footer ------*/
 
 .main-container {
-    min-height: 100vh; /* will cover the 100% of viewport */
+    min-height: 100vh;
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 240px; /* height of your footer */
+    padding-bottom: 240px;
 }
 
 footer {
@@ -823,7 +842,8 @@ footer {
     font-weight: 500;
     text-align: center;
     list-style-type: none;
-    padding-inline-start: 0;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
 }
 
 .shed-icon {
@@ -1046,8 +1066,10 @@ footer {
 
 /* Add Animation - Zoom in the Modal */
 .modal-content {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+    -webkit-animation-name: zoom;
+            animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
 }
 
 @-webkit-keyframes zoom {
@@ -1057,11 +1079,12 @@ footer {
 
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {-webkit-transform:scale(0);transform:scale(0)}
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 /* The Close Button */
+
 .close {
     position: absolute;
     top: 15px;
@@ -1069,6 +1092,8 @@ footer {
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -1080,9 +1105,12 @@ footer {
 }
 
 /* Style the Image Used to Trigger the Modal */
+
 .myImg {
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -1101,21 +1129,16 @@ footer {
 #reveal1 {
 		opacity: 0;
 		-webkit-transform: scale(0.9);
-			 -moz-transform: scale(0.9);
 				-ms-transform: scale(0.9);
-				 -o-transform: scale(0.9);
 						transform: scale(0.9);
 		-webkit-transition: all 0.5s ease-in-out;
-			 -moz-transition: all 0.5s ease-in-out;
-				-ms-transition: all 0.5s ease-in-out;
 				 -o-transition: all 0.5s ease-in-out;
 						transition: all 0.5s ease-in-out;
 	}
+
 #reveal1.visible {
 		opacity: 1;
 		-webkit-transform: none;
-			 -moz-transform: none;
 				-ms-transform: none;
-				 -o-transform: none;
 						transform: none;
 	}
