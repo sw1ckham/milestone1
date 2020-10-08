@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Piazzolla:wght@300&display=swap');
+
 header {
     margin: 0;
 }
@@ -32,15 +33,18 @@ html {
     background-color: #4caf50;
 }
 .heading {
+    font-family: 'Piazzolla', serif;
     color: #4caf50;
     padding-top: 20px;
 }
 .why-us-heading {
+    font-family: 'Piazzolla', serif;
     color: #4caf50;
     text-align: center;
     padding-top: 20px;
 }
 .enquire-heading {
+    font-family: 'Piazzolla', serif;
     color: #4caf50;
     text-align: center;
     text-decoration: none;
@@ -48,6 +52,7 @@ html {
     padding-bottom: 15px;
 }
 .meet-the-team-headings {
+    font-family: 'Piazzolla', serif;
     color: #4caf50;
     font-weight: 400;
     border: #adadad solid 3px;
@@ -60,6 +65,7 @@ html {
     box-shadow: 0 1px 20px -8px #797479;
 }
 .who-are-we-heading {
+    font-family: 'Piazzolla', serif;
     color: #4caf50;
     font-weight: 400;
     border: #adadad solid 3px;
@@ -73,6 +79,7 @@ html {
     display: inline-block;
 }
 .main-section-heading {
+    font-family: 'Piazzolla', serif;
     text-align: center;
     color: #4caf50;
     font-weight: 500;
@@ -91,6 +98,7 @@ html {
     letter-spacing: 1px;
     line-height: 1.4;
     font-size: 30px;
+    font-family: 'Piazzolla', serif;
 }
 .homepage-tagline-heading {
     text-align: center;
@@ -100,6 +108,7 @@ html {
     letter-spacing: 1px;
     line-height: 1.4;
     font-size: 20px;
+    font-family: 'Piazzolla', serif;
 }
 .build-specs-heading {
     text-align: center;
@@ -110,6 +119,7 @@ html {
     line-height: 1.4;
     -ms-flex-line-pack: center;
     align-content: center;
+    font-family: 'Piazzolla', serif;
 }
 .navbar-collapse {
     height: auto;
@@ -131,13 +141,16 @@ html {
     top: 0;
     right: 0;
     margin: 5px 5px 5px 5px;
+    background: url("../images/front-page-images/logo-edit.png");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background: #f8f9fa url(../images/front-page-images/logo-edit.png) no-repeat center;
+    background-color: #f8f9fa;
     width: 125px;
     height: 95px;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 .nav-link {
     font-weight: 700;
@@ -242,8 +255,38 @@ html {
     width: 90%;
 }
 
+.standard-window {
+    height: auto;
+    width: 30%;
+}
+
 .mul-select {
-    width: 100%;
+    width: 90%;
+}
+
+.steps-boxes {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.steps-numbers {
+    position: absolute;
+    top: -20px;
+    left: 40%;
+    background-color: #efefef;
+    width: 50px;
+    height: 50px;
+    font-family: 'Piazzolla', serif;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+.steps-text {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*    Meet the team */
@@ -336,6 +379,7 @@ html {
     color: #716666;
     font-weight: 500;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 .guarantee-section {
     padding-top: 20px;
@@ -417,6 +461,7 @@ html {
 .why-us-text {
     padding-top: 25px;
     margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .why-us-images {
     display: block;
@@ -483,11 +528,13 @@ html {
     padding-left: 35px;
     letter-spacing: 1px;
     color: #4caf50;
+    font-family: 'Piazzolla', serif;
 }
 .review-text {
     letter-spacing: 2px;
     text-align: center;
     padding-top: 25px;
+    font-family: 'Open Sans', sans-serif;
 }
 .test-images {
     border-radius: 5px;
@@ -642,16 +689,19 @@ footer {
     padding-top: 20px;
     color: #716666;
     font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
 }
 .build-specs-text {
     letter-spacing: 1px;
     line-height: 30px;
     padding-top: 20px;
     color: #716666;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    font-family: 'Open Sans', sans-serif;
 }
 .build-specs-heading {
     display: none;
+    font-family: 'Piazzolla', serif;
 }
 .site-map {
     text-align: center;
@@ -679,6 +729,7 @@ footer {
     list-style-type: none;
     -webkit-padding-start: 0;
     padding-inline-start: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .shed-icon {
     font-size: 0.5rem;
