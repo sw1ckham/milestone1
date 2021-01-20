@@ -1,7 +1,4 @@
 User-agent: *
 
-Disallow: /404/
-Disallow: /images/
-Disallow: /https://trustedtraders.which.co.uk/businesses/southwicks-ltd/
-Disallow: /https://www.buywithconfidence.gov.uk/profile/southwicks-limited/8597/
+Disallow: /node_modules
 
