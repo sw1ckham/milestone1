@@ -87,7 +87,7 @@
                             <a class="dropdown-item" href="exterior-gallery.html">Exterior</a>
                             <a class="dropdown-item" href="outer-shell-gallery.html">Outer Shells</a>
                             <a class="dropdown-item" href="past-progress-gallery.html">Past Work in Progress</a>
-                            <a class="dropdown-item" href="customconfig.html">Create your custom configurations</a>
+                            <!-- <a class="dropdown-item" href="customconfig.html">Create your custom configurations</a> -->
                         </div>
                     </li>
 
@@ -118,20 +118,19 @@
         <div class="nav-margin-div"></div>
 
             <div class="container-fluid contact-us-section">
-                <div class="row">
-                    <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-11">
                         <h1 class="main-section-heading"><strong>We would love to hear from you</strong></h1>
+                        <p class="meet-the-team-text">Before enquiring with us, please refer to our <a href="/outer-shell-gallery.html">Outer Shells Gallery</a> and choose the shell that best suits your needs and note the number it is labelled with. Feel free to pick multiple choices.</p>
                     </div>
                 </div>
 
                 <hr class="block-divider">
 
-                <!--Code from Bootstrap Forms https://getbootstrap.com/docs/4.1/components/forms/-->
 
                 <div class="container-fluid contact-section d-flex justify-content-center">
                     <div class="row no-gutters justify-content-center align-items-center">
                         <div class="col-11 enquire-form">
-                            <h4 class="uppercase enquire-heading">Get in touch with us</h4>
                             <form id="contact-form" class="formsection" onsubmit="return emailjs.sendForm(this);">
                                 <div class="form-row">
                                     <div class="col">
@@ -180,8 +179,13 @@
                                 <div class="form-group">
                                     <div class="col">
                                         <label for="exampleFormControlTextarea1" class="message-text">Your
-                                            Message</label>
+                                            Message & Size Configurations</label>
                                         <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
+                                                  rows="3"></textarea>
+                                    </div>
+                                    <div class="col">
+                                        <label for="exampleFormControlTextarea2" class="message-text">Which Outer Shell suits your needs?</label>
+                                        <textarea class="form-control" name="outershell-id" id="exampleFormControlTextarea2"
                                                   rows="3"></textarea>
                                     </div>
                                 </div>
